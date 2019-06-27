@@ -1,0 +1,23 @@
+using pre-built artifacts from C:/Users/benfy/Desktop/VPSA-Report\build\target\x86_64-pc-windows-msvc\debug\pyoxidizer
+cargo:rerun-if-env-changed=PYOXIDIZER_REUSE_ARTIFACTS
+cargo:rerun-if-env-changed=PYOXIDIZER_ARTIFACT_DIR
+cargo:rerun-if-changed=C:/Users/benfy/Desktop/VPSA-Report\pyoxidizer.toml
+cargo:rustc-link-lib=static=pyembeddedconfig
+cargo:rustc-link-lib=static=libcrypto_static
+cargo:rustc-link-lib=static=liblzma
+cargo:rustc-link-lib=static=libssl_static
+cargo:rustc-link-lib=static=sqlite3
+cargo:rustc-link-lib=Ole32
+cargo:rustc-link-lib=OleAut32
+cargo:rustc-link-lib=User32
+cargo:rustc-link-lib=cabinet
+cargo:rustc-link-lib=crypt32
+cargo:rustc-link-lib=msi
+cargo:rustc-link-lib=rpcrt4
+cargo:rustc-link-lib=shlwapi
+cargo:rustc-link-lib=version
+cargo:rustc-link-lib=winmm
+cargo:rustc-link-lib=ws2_32
+cargo:rustc-link-lib=static=pythonXY
+cargo:rustc-link-search=native=C:/Users/benfy/Desktop/VPSA-Report\build\target\x86_64-pc-windows-msvc\debug\pyoxidizer
+cargo:rustc-env=PYEMBED_DATA_RS_PATH=C:/Users/benfy/Desktop/VPSA-Report\build\target\x86_64-pc-windows-msvc\debug\pyoxidizer\data.rs
