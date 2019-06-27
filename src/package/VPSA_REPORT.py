@@ -12,8 +12,8 @@ def main():
 	REPXLexists = os.path.isfile('./REPORT.xlsx')
 
 	if FBexists: 
-		mon = "04"
-		#mon = input("input the number of the month you would like data for: ")
+		#mon = "04"
+		mon = input("input the number of the month you would like data for (ex: April is 04, December is 12): ")
 
 		Placeholder0 = []
 		Placeholder1 = []
@@ -255,8 +255,8 @@ def main():
 		print(first_Open)
 
 		#print(EM_Out['C146'].value)
-		month = "april"
-		#month = input("Input the name of the month you want to add to the spreadsheet. ")
+		#month = "april"
+		month = input("Input the name of the month you want to add to the spreadsheet (ex: April, May, June). ")
 		with open('Emma' + mon + '.csv', 'r', encoding='utf-8') as EMcsv:
 			count = -1
 			for i in EMcsv:
@@ -284,5 +284,5 @@ def main():
 	else :
 		print("Couldn't find the file Report.xlsx in the same folder as this script..!")
 
-	#d = input("are you satisfied? . . ")
+	d = input("Press Enter to Close Window. . .")
 #main()
